@@ -4,7 +4,7 @@ An original interactive architectural art installation: a suspended beam, one cl
 
 ## Current scope
 
-Visual design and documentation only, as authorized in the second task. Produce reviewable static compositions, concise design specifications, and asset requirements. Do not build the application, install dependencies, provision services, host, deploy, or spend money. Update `STATUS.md` and stop. A future implementation requires a new instruction.
+The third task authorizes the local application foundation and visually complete architectural opening. Use Next.js, React, TypeScript, Tailwind CSS 4, GSAP, licensed local fonts, and authored SVG/CSS. Keep the sculpture in an explicitly presentational vertical single-support rest. Complete physics interaction belongs to the next stage. Run TypeScript and a brief local visual smoke check only; no comprehensive QA, hosting, deployment, paid services, or provisioning. Update `STATUS.md` and stop.
 
 ## Non-negotiable constraints
 
@@ -21,17 +21,16 @@ Visual design and documentation only, as authorized in the second task. Produce 
 
 ## Practical structure
 
-The current project contains `docs/` and static review artifacts in `design/`. Scripts under `design/source/` author design files only. Proposed future application structure:
+The reviewed compositions remain in `design/`; application screenshots are separate in `design/implementation/`. Scripts under `design/source/` author design files only. Application structure:
 
 ```text
 src/
-  model/          # constants, pure equilibrium solver, validation
-  interaction/    # state machine, pointer and keyboard adapters
-  sculpture/      # original SVG geometry, material and hoist rendering
-  accessibility/  # native controls, descriptions, announcements
-  styles/         # palette, typography, responsive composition, motion
-public/           # licensed local fonts and original authored assets
-tests/            # equilibrium invariants and complete interaction flows
+  app/            # App Router routes, layout, tokens and composition CSS
+  assets/fonts/   # licensed local WOFF2 subsets and OFL files
+  components/     # room, branding, native controls and navigation
+  model/          # declared presentation pose; solver in the next stage
+  sculpture/      # original SVG geometry and material layers
+scripts/          # optional font asset tooling
 ```
 
-Start a future build with Vite, TypeScript, SVG/CSS, and native HTML controls; no backend is needed. Keep solved data independent of rendering and animation. Add a renderer or library only for a demonstrated need. No scaffold or runtime is created in this phase.
+The user's Next.js instruction supersedes the earlier Vite suggestion. No backend or Three.js is needed for these approved orthographic visuals. Keep future solved data independent of rendering and animation. Add dependencies only for a demonstrated need.

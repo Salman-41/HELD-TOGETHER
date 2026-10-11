@@ -1,0 +1,44 @@
+{
+  "scope": "Brief local visual smoke; no comprehensive QA",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "horizontalOverflow": false,
+      "fontStatus": "loaded",
+      "heading": "A span, waiting to happen.",
+      "restState": "single-rest",
+      "activationDisabled": "true"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "horizontalOverflow": false,
+      "fontStatus": "loaded",
+      "heading": "A span, waiting to happen.",
+      "restState": "single-rest",
+      "activationDisabled": "true"
+    },
+    {
+      "name": "narrow",
+      "width": 320,
+      "height": 844,
+      "status": 200,
+      "horizontalOverflow": false,
+      "fontStatus": "loaded",
+      "heading": "A span, waiting to happen.",
+      "restState": "single-rest",
+      "activationDisabled": "true"
+    }
+  ],
+  "errors": [],
+  "explanationReached": true,
+  "noJavaScript": {
+    "status": 200,
+    "explanationDisclosureOpen": true
+  }
+}

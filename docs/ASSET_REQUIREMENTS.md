@@ -22,4 +22,8 @@ Fonts were downloaded from the [Google Fonts Instrument Serif source](https://gi
 - **Controls:** native HTML range/buttons styled as the pictured gallery controls. Small visuals have larger hit areas. Preserve focus, keyboard movement, cancellation, and a plain-text sculpture description.
 - **Motion:** author cable paths and coordinated poses from the motion score; verify the illustrative hoist sequence without applying static results to its intermediate frames. Use transform/opacity updates and stop rendering when idle.
 
-No photographic asset, stock artwork, 3D engine, backend, hosting, deployment, paid service, or application scaffold is required by this design.
+No photographic asset, stock artwork, 3D engine, backend, hosting, deployment, or paid service is required by this design.
+
+## Foundation delivery
+
+The authorized opening now uses separate SVG geometry/material layers and CSS architecture, not screenshots. Locally served Latin/editorial WOFF2 subsets are in `src/assets/fonts/` with both OFL files (Inter weights 400–500; Instrument Serif 400; about 47 KB combined). `scripts/subset-fonts.py` records optional regeneration. The wordmark is an original text-based SVG rendered with the local serif; its editable master is preserved. Interface text remains HTML.
