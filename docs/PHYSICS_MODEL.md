@@ -50,4 +50,4 @@ This is an illustrative powered-hoist sequence, not a solved trajectory or a pas
 | Horizontal, both | `1.5 m` | `98.10 N` | `98.10 N` |
 | Horizontal, both | `3 m` | `58.86 N` | `137.34 N` |
 
-Future solver checks: the sum is `Q`; the moment residual is zero; reflection `s → L-s` swaps reactions; all permitted reactions are positive. Require normalized residuals `|ΣF_Y|/Q ≤ 10⁻⁹` and `|ΣM_A|/(QL) ≤ 10⁻⁹`. Compute before display rounding. These are analytic reference values, not a claim that software has been built or tested.
+Solver checks: the sum is `Q`; the moment residual is zero; reflection `s → L-s` swaps reactions; all permitted reactions are positive. Require normalized residuals `|ΣF_Y|/Q ≤ 10⁻⁹` and `|ΣM_A|/(QL) ≤ 10⁻⁹`. Compute before display rounding. Implemented in `src/model/equilibrium.ts`; `npm run test:model` checks the analytic examples, 101 supported positions, invalid inputs, state guards and illustrative-hoist geometry. Reject nonfinite arithmetic/overflow too. These are virtual-model results, not measured engineering performance.

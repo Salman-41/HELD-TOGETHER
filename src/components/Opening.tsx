@@ -91,7 +91,7 @@ export function Opening() {
     top: `${(weight.y + OPENING.loadCord + OPENING.loadHeight / 2 + 1.65) / 6 * 100}%`,
     width: `${OPENING.loadWidth / 3.5 * 100}%`, height: `${OPENING.loadHeight / 6 * 100}%`,
   };
-  const description = busy ? "Hoist movement — illustrative. Both ceiling winches coordinate the lift. Static force results are hidden." : supported ? `The beam is horizontal with two taut vertical cables. The weight is ${position.toFixed(2)} metres from A. ${forces ? `Support A carries ${forceText(forces.a)}; support B carries ${forceText(forces.b)}. ` : ""}The reactions describe an ideal quasi-static position, not inertial forces from dragging.` : OPENING_DESCRIPTION;
+  const description = invalid ? "Position unavailable. The declared vertical fallback pose is shown; calculated forces are hidden. Reset the experiment to restore valid model data." : busy ? "Hoist movement — illustrative. Both ceiling winches coordinate the lift. Static force results are hidden." : supported ? `The beam is horizontal with two taut vertical cables. The weight is ${position.toFixed(2)} metres from A. ${forces ? `Support A carries ${forceText(forces.a)}; support B carries ${forceText(forces.b)}. ` : ""}The reactions describe an ideal quasi-static position, not inertial forces from dragging.` : OPENING_DESCRIPTION;
 
   return (
     <div className="gallery-shell" onKeyDown={event => { if (event.key === "Escape") { if (forceView) closeForces(); else endDrag(true); } }}>

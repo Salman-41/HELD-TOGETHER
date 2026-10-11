@@ -85,7 +85,6 @@ export function useExperiment() {
       media.removeEventListener("change", reduce);
     };
     // Listeners read current model refs, never stale rendered state.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {

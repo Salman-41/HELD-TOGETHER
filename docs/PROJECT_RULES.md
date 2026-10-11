@@ -4,7 +4,7 @@ An original interactive architectural art installation: a suspended beam, one cl
 
 ## Current scope
 
-The third task authorizes the local application foundation and visually complete architectural opening. Use Next.js, React, TypeScript, Tailwind CSS 4, GSAP, licensed local fonts, and authored SVG/CSS. Keep the sculpture in an explicitly presentational vertical single-support rest. Complete physics interaction belongs to the next stage. Run TypeScript and a brief local visual smoke check only; no comprehensive QA, hosting, deployment, paid services, or provisioning. Update `STATUS.md` and stop.
+The fourth task authorizes the working structural interaction: add/remove support, bounded weight movement, correct calculated reactions, reset and current-state force explanation. Preserve the gallery and the physics contract. The powered hoist is explicitly illustrative; solve only valid rest configurations (including quasi-static weight positions). Use the existing stack and local assets. Run a few focused mathematical tests, targeted control checks and TypeScript only; no comprehensive QA, hosting, deployment, paid services, or provisioning. Update `STATUS.md` and stop.
 
 ## Non-negotiable constraints
 
@@ -28,9 +28,11 @@ src/
   app/            # App Router routes, layout, tokens and composition CSS
   assets/fonts/   # licensed local WOFF2 subsets and OFL files
   components/     # room, branding, native controls and navigation
-  model/          # declared presentation pose; solver in the next stage
+  model/          # pure equilibrium solver, parameters and visual proportions
+  interaction/    # pure guarded state reducer and scoped motion/input controller
   sculpture/      # original SVG geometry and material layers
 scripts/          # optional font asset tooling
+tests/            # six focused model/state/hoist tests; no test framework dependency
 ```
 
 The user's Next.js instruction supersedes the earlier Vite suggestion. No backend or Three.js is needed for these approved orthographic visuals. Keep future solved data independent of rendering and animation. Add dependencies only for a demonstrated need.

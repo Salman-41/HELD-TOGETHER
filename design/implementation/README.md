@@ -1,11 +1,12 @@
 # Local application previews
 
-These screenshots show the implemented opening, separately from the authoritative design references in `design/compositions/`.
+These are actual runtime screenshots, separate from approved design references in `design/compositions/`.
 
-- `opening-desktop.png`: 1440 × 900.
-- `opening-mobile.png`: 390 × 844.
-- `opening-narrow.png`: 320 × 844.
-- `vertical-rest-explanation.png`: current-pose explanatory route, assumptions expanded at 320 px.
-- `smoke.json`: brief localhost rendering/navigation/no-JavaScript evidence.
+- `opening-desktop/mobile/narrow.png`: working opening at 1440 × 900, 390 × 844 and 320 × 844.
+- `supported-desktop/mobile.png`: calculated equilibrium at s = 2.25 m (A 78.48 N, B 117.72 N).
+- `forces-desktop.png`: registered force drawing at the same position.
+- `forces-mobile-midpoint.png`: coincident W/P combined at s = 1.50 m; the plate grows naturally to keep its dimension labels clear.
+- `forces-narrow-endpoint.png`: 320 px force view at s = 3 m.
+- `interaction-check.json`: targeted pointer/keyboard/touch/support/reset/force-view/no-JavaScript evidence.
 
-The engagement annotation explicitly identifies the opening as a still study. The control remains focusable and `aria-disabled`; no support movement or equilibrium solver is implemented. The explanatory page uses declared vertical-rest reference values, not a live calculation. This is not comprehensive QA or production-build verification.
+`smoke.json` and `vertical-rest-explanation.png` retain evidence from the earlier foundation stage. Support activation was unavailable then; that limitation is superseded. No comprehensive QA, Lighthouse or production build was run. Hoist motion is explicitly illustrative; only valid rest and quasi-static load positions produce reactions.

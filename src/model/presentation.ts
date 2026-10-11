@@ -1,11 +1,13 @@
+import { MODEL } from "./equilibrium";
+
 /** Visual proportions and the approved initial pose. Solver lives in equilibrium.ts. */
 export const OPENING = Object.freeze({
   phase: "single-rest" as const,
-  beamLength: 3,
+  beamLength: MODEL.length,
   beamDepth: 0.08,
   anchorHeight: 1.5,
   angle: -Math.PI / 2,
-  loadPosition: 3,
+  loadPosition: MODEL.length,
   loadCord: 0.35,
   loadWidth: 0.32,
   loadHeight: 0.44,

@@ -27,7 +27,7 @@ export function Sculpture({ pose, position, forces, forceView, supported, scale,
   const dimension = Math.max(mobile ? 120 : 200, downForce * forceScale + (mobile ? 44 : 54)) / scale;
   const dimensionL = dimension + (mobile ? 34 : 36) / scale;
   const labelEnd = (y: number, force: number, up = false) => y + force * forceScale / scale * (up ? -1 : 1);
-  const cableStart = -OPENING.anchorHeight + 0.0917;
+  const cableStart = -OPENING.anchorHeight;
   const controlX = (length + b.x) / 2 + (length - b.x) * pose.slack / 2;
   const controlY = cableStart + (b.y - cableStart) * (1 + pose.slack) / 2;
   return (
@@ -38,7 +38,6 @@ export function Sculpture({ pose, position, forces, forceView, supported, scale,
           <linearGradient id="rest-clay"><stop stopColor="#B8644B" /><stop offset=".65" stopColor="#A8503C" /><stop offset="1" stopColor="#823C2F" /></linearGradient>
         </defs>
         <g className="material-layer" style={{ opacity: forceView ? 0 : 1 }}>
-          {[0, length].map(x => <g key={x} transform={`translate(${x} ${-OPENING.anchorHeight})`}><rect x="-.0833" y="-.0583" width=".1666" height=".0833" fill="var(--color-metal)" /><rect x="-.0417" y=".025" width=".0834" height=".075" rx=".0167" fill="#5A6256" /><circle cy=".0583" r=".0183" fill="var(--color-plaster)" /></g>)}
           <g fill="none" strokeWidth="1.4">
             <path data-cable="a" d={`M0 ${cableStart}L${a.x} ${a.y}`} stroke="var(--color-steel)" vectorEffect="non-scaling-stroke" />
             <path data-cable="b" d={`M${length} ${cableStart}Q${controlX} ${controlY} ${b.x} ${b.y}`} stroke={pose.slack > 0 ? "#697064" : "var(--color-steel)"} vectorEffect="non-scaling-stroke" />
@@ -71,6 +70,7 @@ export function Sculpture({ pose, position, forces, forceView, supported, scale,
           </> : null}
         </g>
       </svg>
+      {[0, length].map(x => <svg key={x} className="hoist-fitting" viewBox="0 0 20 20" aria-hidden="true" style={at(x, -OPENING.anchorHeight)}><rect width="20" height="10" fill="var(--color-metal)" /><rect x="5" y="10" width="10" height="9" rx="2" fill="#5A6256" /><circle cx="10" cy="14" r="2.2" fill="var(--color-plaster)" /></svg>)}
       {forceView && forces ? <div className="force-labels">
         <p className="force-label force-a" style={at(a.x, labelEnd(a.y, forces.a, true))}>A · {forceText(forces.a)}</p>
         {supported ? <p className="force-label force-b" style={at(b.x, labelEnd(b.y, forces.b, true))}>B · {forceText(forces.b)}</p> : null}
