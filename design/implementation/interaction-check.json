@@ -1,0 +1,9 @@
+{
+  "scope": "Targeted mathematical/control verification only",
+  "checks": [
+    "Desktop illustrative lift, hidden transitional forces, offset-preserving drag, Escape cancellation, numerical reactions, force-view preservation, keyboard increments/endpoints, button alternative, reset and resize interruption",
+    "Touch drag, reduced-motion endpoints, midpoint combined force, support removal to credible vertical rest, current single-rest explanation and 320px force-view bounds",
+    "Server-rendered vertical rest and native no-JavaScript explanation fallback"
+  ],
+  "errors": []
+}

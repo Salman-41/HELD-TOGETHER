@@ -6,7 +6,8 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:model": "node scripts/test-model.cjs"
   },
   "engines": { "node": ">=20.9.0" },
   "dependencies": {
