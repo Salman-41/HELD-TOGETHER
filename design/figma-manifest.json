@@ -1,0 +1,139 @@
+{
+  "fileKey": "mzUWUyV3Nlf9mkCKuf1mpg",
+  "url": "https://www.figma.com/design/mzUWUyV3Nlf9mkCKuf1mpg",
+  "status": "Earlier editable version; reviewed local compositions are authoritative. Quota prevented final synchronization.",
+  "frames": [
+    {
+      "id": "3:2",
+      "name": "Desktop / Opening",
+      "width": 1440,
+      "height": 900,
+      "nodes": 45,
+      "types": {
+        "RECTANGLE": 6,
+        "FRAME": 5,
+        "VECTOR": 19,
+        "INSTANCE": 3,
+        "TEXT": 12
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    },
+    {
+      "id": "3:48",
+      "name": "Desktop / Supported",
+      "width": 1440,
+      "height": 900,
+      "nodes": 57,
+      "types": {
+        "RECTANGLE": 8,
+        "FRAME": 4,
+        "VECTOR": 24,
+        "INSTANCE": 5,
+        "TEXT": 15,
+        "ELLIPSE": 1
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    },
+    {
+      "id": "3:106",
+      "name": "Desktop / Force drawing",
+      "width": 1440,
+      "height": 900,
+      "nodes": 38,
+      "types": {
+        "RECTANGLE": 2,
+        "INSTANCE": 2,
+        "TEXT": 21,
+        "FRAME": 4,
+        "VECTOR": 9
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    },
+    {
+      "id": "3:145",
+      "name": "Mobile / Opening",
+      "width": 390,
+      "height": 844,
+      "nodes": 36,
+      "types": {
+        "RECTANGLE": 6,
+        "FRAME": 2,
+        "VECTOR": 17,
+        "INSTANCE": 3,
+        "TEXT": 8
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    },
+    {
+      "id": "3:182",
+      "name": "Mobile / Supported",
+      "width": 390,
+      "height": 844,
+      "nodes": 52,
+      "types": {
+        "RECTANGLE": 8,
+        "FRAME": 2,
+        "VECTOR": 23,
+        "INSTANCE": 5,
+        "TEXT": 13,
+        "ELLIPSE": 1
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    },
+    {
+      "id": "3:235",
+      "name": "Mobile / Force drawing",
+      "width": 390,
+      "height": 844,
+      "nodes": 35,
+      "types": {
+        "RECTANGLE": 2,
+        "INSTANCE": 3,
+        "TEXT": 18,
+        "FRAME": 3,
+        "VECTOR": 9
+      },
+      "textFonts": [
+        "Instrument Serif",
+        "Inter"
+      ],
+      "rasterNodes": 0
+    }
+  ],
+  "wordmark": "2:14",
+  "action": "2:18",
+  "variables": {
+    "plaster": "VariableID:2:3",
+    "steel": "VariableID:2:4",
+    "clay": "VariableID:2:5",
+    "metal": "VariableID:2:6",
+    "reaction": "VariableID:2:7",
+    "paper": "VariableID:2:8",
+    "secondary": "VariableID:2:9"
+  },
+  "localRefinements": [
+    "Desktop opening action and caption x=936; leader rerouted to clear cable.",
+    "Secondary ink #535B52; opening floor caption steel.",
+    "Mobile technical W/P labels made explicit; 320 px label spacing proofed."
+  ]
+}
