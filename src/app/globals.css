@@ -21,8 +21,8 @@ p, h1, figure { margin: 0; }
 :focus-visible { outline: 2px solid var(--color-steel); outline-offset: 4px; }
 main:focus { outline: none; }
 ::selection { background: var(--color-reaction); color: var(--color-steel); }
-.skip-link { position: fixed; top: 12px; left: 24px; z-index: 20; padding: 12px; background: var(--color-paper); transform: translateY(-150%); }
-.skip-link:focus { transform: none; }
+.skip-link { position: fixed; top: 12px; left: 24px; z-index: 20; padding: 12px; background: var(--color-paper); transform: translateY(-150%); clip-path: inset(50%); }
+.skip-link:focus { transform: none; clip-path: none; }
 .text-action { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent; font-size: 14px; font-weight: 500; line-height: 1.4; gap: .3em; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .text-action:hover { text-decoration-thickness: 2px; }
 button[aria-disabled="true"] { cursor: default; }
@@ -78,6 +78,7 @@ button[aria-disabled="true"] { cursor: default; }
   .exhibition-kind, .rest-status, .floor-caption { left: 50px; }
   .wall-reveal { left: 390px; }
   .engagement { left: calc(var(--a-x) + var(--span) * .2); }
+  .presentation-note { max-width: calc(var(--span) * .65); }
   .activation-leader { display: none; }
   .cable-caption { left: calc(var(--a-x) + var(--span) - 12px); top: 164px; }
   .weight-caption { left: calc(var(--a-x) + 40px); top: calc(var(--a-y) + var(--span) * 1.24); max-width: 150px; }

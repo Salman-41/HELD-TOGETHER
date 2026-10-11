@@ -1,27 +1,26 @@
 # HELD TOGETHER — status
 
-Updated: 2026-10-11 (Asia/Karachi). Phase: visual design complete; stopped as requested.
+Updated: 2026-10-11 (Asia/Karachi). Phase: application foundation and architectural opening complete; stopped as requested.
 
 ## Completed
 
-- Read all existing project documents and preserved the equilibrium model, beam self-weight, vertical single-support rest, and illustrative powered-hoist transition.
-- Reviewed Frei Otto, Unseen Studio, 35mm, and contemporary installation photography; source links and adopted principles are in `VISUAL_DESIGN.md`.
-- Created six original static compositions: opening, supported interaction, and force explanation at both 1440 × 900 and 390 × 844. Also created all three 320 × 844 adaptation proofs.
-- Finalized the wordmark, typefaces, material/lighting treatment, object-relative controls, diagram grammar, responsive layout, accessibility appearance, and motion score.
-- Supplied editable SVGs, native-size PNGs, a six-page PDF, an overview board, font files/licenses, and concise asset requirements. Created an editable Figma file with six frames and shared foundations.
+- Read the rules, creative brief, six approved compositions, asset handoff, physics and interaction specifications. The reviewed local SVG/PNG/PDF designs remain authoritative over the earlier Figma version.
+- Created a minimal App Router foundation with pinned Next.js 16.4.0, React 19.3.0, TypeScript 5.9.3, Tailwind CSS 4.3.3 and GSAP 3.15.0; lockfile and local scripts. No Three.js or backend.
+- Built the approved desktop/mobile opening with the offset wordmark, plaster wall reveal, diagonal daylight, limestone floor/joints, original steel/cable/clay SVG layers and restrained wall shadow. Added 320 px adaptation and normal scrolling on shorter viewports.
+- Supplied licensed local WOFF2 subsets (about 47 KB combined), OFL files, design tokens, reusable components, exhibition navigation, metadata and a return route for missing pages.
+- Declared `single-rest` in `src/model/presentation.ts`: vertical beam, A taut, B visibly slack, load locked at B. “Engage second support” is focusable with `aria-disabled` and the visible note “Still study · activation forthcoming.” There is no simulated activation or load movement.
+- Added `/how-it-is-held`, explaining the current vertical rest with declared reference values and beam self-weight. Its native assumptions disclosure works without JavaScript. GSAP loads on disclosure only, for a 200 ms fade; reduced motion skips it. No idle animation loop.
 
 ## Verification and limits
 
-Visually reviewed all six local compositions and the three 320 px proofs; corrected control/cable and narrow-screen annotation collisions. Checked text contrast, SVG/PNG dimensions, six PDF page sizes, local document links, and static-only SVG content. The earlier 1,001-position arithmetic verification remains applicable; the pictured load position is 2.25 m with A = 78.48 N and B = 117.72 N.
+`npm run typecheck` passed. Brief localhost browser smoke passed at 1440 × 900, 390 × 844 and 320 × 844: HTTP 200, local fonts loaded, no horizontal overflow, correct rest declaration, unavailable activation, and no browser errors. Visually reviewed the three opening screenshots against the approved references. Explanation navigation and the no-JavaScript native disclosure passed. Corrected an initial local-font path error before the passing check.
 
-Figma's Starter tool quota stopped further reads/writes after the supported desktop screenshot. Its six frames are earlier editable versions; the reviewed local files include the final clearance, secondary-ink, and mobile-label refinements and are authoritative. The difference is recorded in `design/figma-manifest.json`. No paid upgrade was used.
-
-These are actual static visual compositions, not a functioning prototype. Motion is specified but not implemented or dynamically verified. No application, installed dependencies, hosting, deployment, paid services, or engineering capacity analysis were created.
+Actual runtime screenshots and smoke evidence are in [design/implementation](../design/implementation/README.md). The opening uses HTML/SVG server output as its readable fallback. Review was limited to TypeScript and this brief smoke: no production build, comprehensive accessibility/interaction QA, Lighthouse, hosting, deployment, paid services, or capacity analysis.
 
 ## Handoff
 
-Start review with [the six-page PDF](../design/HELD-TOGETHER-compositions.pdf) or [overview](../design/review-board.png). `VISUAL_DESIGN.md` records precise composition and motion decisions; `ASSET_REQUIREMENTS.md` records delivered files and later production needs. `design/README.md` explains the source files and Figma limitation.
+Run `npm ci`, then `npm run dev`; open `http://127.0.0.1:3000`. [README](../README.md) records the routes and component boundaries. Approved design artifacts remain unchanged in `design/compositions/`.
 
-Future implementation requires a new user instruction. Its first checks should cover the pure equilibrium model, complete support/return sequence, cable connections and floor clearance during the illustrative lift, accessible controls, and reduced motion. Do not treat static visual review as runtime verification.
+The next authorized stage must implement the pure equilibrium solver and complete accessible support/load state machine. Verify the coordinated illustrative lift, A's movement, cable attachments and floor clearance; hide equilibrium readouts during motion. Preserve the valid vertical rest, self-weight, keyboard/touch alternatives and reduced-motion endpoints. The current explanation's numbers are disclosed reference values, not live solver results.
 
 Next action now: none. Stop here.
